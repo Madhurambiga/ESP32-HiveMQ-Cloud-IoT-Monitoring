@@ -1,0 +1,36 @@
++---------+
+| DHT11   |
++---------+
+      |
+      v
++---------+
+| ESP32   |
++---------+
+      |
+ MQTT Publish
+      |
+      v
++------------------+
+| HiveMQ Cloud     |
++------------------+
+      |
+ MQTT Subscribe
+      |
+      v
++------------------+
+| Web Dashboard    |
++------------------+
+
+Cloud -> Device Control
+
+Dashboard
+     |
+ MQTT Publish
+     |
+     v
+HiveMQ Cloud
+     |
+ MQTT Subscribe
+     |
+     v
+ESP32 LED
